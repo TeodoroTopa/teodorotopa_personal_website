@@ -63,7 +63,7 @@ const userData = {
       "I'm a data scientist with a strong interest in conservation and sustainability.",
     description: [
       'My corporate experience is coupled with a wide range of coursework and professional experience that spans from natural language processing and classification to building an automated wildlife mapping pipeline. I thrive on getting projects out into the world, and love tackling novel challenges and field testing new solutions.',
-      'Today, I live in New York and work at 84.51, a data science and analytics organization. In my position, I develop and execute custom data science projects for Fortune 500 retail clients as part of the Partnerships and Delivery team. I engage directly with clients, communicating insights and breaking down data science concepts for non-technical audiences.',
+      'Today, I live in New York and work at 84.51, Kroger's data science and analytics subsidiary. In my position, I develop and execute custom data science projects for the Kroger executive team as part of the Office of the Customer. I also develop and maintain AI-based reporting tools used by stakeholders and decision makers across the whole Kroger enterprise.',
       'My special interest is in conservation. At Cornell University, I double majored in Information Science and Environmental and Sustainability Sciences, completing concentrations in data science and environmental biology and applied ecology. I have experience at the intersection of the two fields, both in the classroom (studying geographic information systems and population biology) and in the workplace (as an assistant to the Conservation Officer at Loisaba Conservancy in Kenya, and as a field researcher in the Galapagos).',
       'Technical expertise aside, I bring business acumen and exceptional interpersonal skills to the table. I\'ve honed these skills through diverse experiences in conservation, law, politics, and the private sector. Having lived on four continents and grown up studying four languages (not including Python! 🙂), I possess a unique cultural awareness and adaptability that allows me to thrive in varied work environments.',
 
@@ -81,11 +81,18 @@ const userData = {
   },
   experience: [
     {
-      title: "Senior Data Scientist",
+      title: "Senior Data Scientist - Office of the Customer",
       company: "84.51",
       year: "Present",
       companyLink: "https://www.8451.com/",
-      desc: "Lead execution for custom data science solutions valued at $1M+/yr, delivering data-driven advice to F500 clients. \n\n Communicate complex methodologies to non-technical audiences, empowering clients to act based on insights. \n\n Designated company-wide subject matter expert; advise on website traffic data usage in analytics & ML projects. \n\n Recently promoted to the Office of the Customer, a team directly serving data science projects to the Kroger Executive team. \n\n Primarily leverage Databricks, PySpark, PowerBI, VSCode, Git, and DataRobot for modeling.",
+      desc: "Directly serve the Kroger executive team in leading execution of ad-hoc data science & analytics projects. \n\n Engineer autonomous AI data interpretation systems used across Kroger, an org. with 400k+ employees. \n\n Curate and maintain complex datasets and data pipelines leveraged in company-wide reporting tools.",
+    },
+    {
+      title: "Data Scientist - Commercial Insights and Loyalty",
+      company: "84.51",
+      year: "2023 - 2025",
+      companyLink: "https://www.8451.com/",
+      desc: "Lead execution for custom data science solutions valued at $1M+/yr, delivering data-driven advice to F500 clients. \n\n Communicate complex methodologies to non-technical audiences, empowering clients to act based on insights. \n\n Designated company-wide subject matter expert; advise on website traffic data usage in analytics & ML projects. \n\n Primarily leverage Databricks, PySpark, PowerBI, VSCode, Git, and DataRobot for modeling.",
     },
     {
       title: "Assistant to the Conservation Officer",
@@ -104,7 +111,7 @@ const userData = {
     {
       title: "Project Manager and Consultant",
       company: "Social Business Consulting Cornell",
-      year: "2019-22",
+      year: "2019 - 2022",
       companyLink: "https://www.sbccornell.org/",
       desc: "As a Project Manager: Led a team of six consultants building a market entry plan, educational partner shortlist, and revenue projection for a conservation organization entering the online professional training space. \n\n As a consultant: Contributed to various semester-long client engagements. Advised on marketing, investment strategy, management optimization, and performed data analytics and data system creation and management. For example, performed data analysis and assisted with data pipelining for a human rights protection organization in South Asia.",
     },
@@ -187,7 +194,7 @@ const userData = {
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1v3Hl8KQeKXbi6awYZ5RWyUPsFCPidYc3/view?usp=sharing",
+    "https://drive.google.com/file/d/1wWSaIowaAyaUZPqDBEu_Q45odkgeXTg7/view?usp=sharing",
   socialLinks: {
     instagram: "https://www.instagram.com/uguay/",
     linkedin: "https://www.linkedin.com/in/teodoro-topa/",
