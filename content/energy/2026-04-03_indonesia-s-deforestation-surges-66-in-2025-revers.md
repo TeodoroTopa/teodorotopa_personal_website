@@ -1,5 +1,7 @@
 ---
-title: "Indonesia’s deforestation surges 66% in 2025, reversing years of decline"
+title: "Indonesia’s deforestation surges 66% in 2025, reversing years of decline (Mongabay)"
+date: 2026-04-03
+source_url: https://news.mongabay.com/2026/04/indonesias-deforestation-surges-66-in-2025-reversing-years-of-decline/
 sources:
   - name: Mongabay
     url: https://news.mongabay.com/2026/04/indonesias-deforestation-surges-66-in-2025-reversing-years-of-decline/
