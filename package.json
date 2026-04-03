@@ -8,11 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.19",
     "axios": "^0.21.1",
+    "gray-matter": "^4.0.3",
     "next": "latest",
     "next-themes": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-markdown": "^10.1.0",
     "react-rough-notation": "^1.0.1"
   },
   "devDependencies": {
