@@ -23,7 +23,18 @@ export default function EnergyPost({ frontmatter, content }) {
             {frontmatter.date}
           </p>
           <h1 className="text-3xl font-bold dark:text-gray-100 mt-2 mb-8">
-            {frontmatter.title}
+            {frontmatter.source_url ? (
+              <a
+                href={frontmatter.source_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700 dark:text-blue-400 hover:underline"
+              >
+                {frontmatter.title}
+              </a>
+            ) : (
+              frontmatter.title
+            )}
           </h1>
           <article className="prose dark:prose-invert max-w-none">
             <ReactMarkdown>{content}</ReactMarkdown>
