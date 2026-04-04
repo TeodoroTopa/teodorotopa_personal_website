@@ -204,3 +204,70 @@ const userData = {
 };
 
 export default userData;
+
+// Mirror of green-context-engine config. Update when adding new pipeline sources.
+export const energySources = {
+  dataSources: [
+    {
+      name: "Ember",
+      url: "https://ember-energy.org",
+      description:
+        "Global electricity generation, carbon intensity, and emissions data for ~200 countries and economic groups.",
+    },
+    {
+      name: "EIA Open Data",
+      url: "https://www.eia.gov/opendata/",
+      description:
+        "US electricity generation by fuel type at national and state level, from the Energy Information Administration.",
+    },
+    {
+      name: "Global Forest Watch",
+      url: "https://www.globalforestwatch.org/",
+      description:
+        "Satellite-derived tree cover loss data by country, covering 2000-2024 at 30-meter resolution.",
+    },
+    {
+      name: "IUCN Red List",
+      url: "https://www.iucnredlist.org/",
+      description:
+        "Threatened species counts by country and threat category, from the International Union for Conservation of Nature.",
+    },
+  ],
+  newsFeeds: [
+    {
+      name: "Mongabay",
+      url: "https://news.mongabay.com",
+      description: "Environmental journalism covering energy, biodiversity, and climate.",
+    },
+    {
+      name: "Carbon Brief",
+      url: "https://www.carbonbrief.org",
+      description: "UK-based outlet specializing in climate science and energy policy.",
+    },
+    {
+      name: "PV Magazine",
+      url: "https://www.pv-magazine.com",
+      description: "Global solar industry news and market analysis.",
+    },
+    {
+      name: "CleanTechnica",
+      url: "https://cleantechnica.com",
+      description: "Clean energy and electric vehicle news.",
+    },
+    {
+      name: "Utility Dive",
+      url: "https://www.utilitydive.com",
+      description: "US energy industry news covering utilities and regulation.",
+    },
+    {
+      name: "Electrek",
+      url: "https://electrek.co",
+      description: "Electric vehicles, energy storage, and solar news.",
+    },
+    {
+      name: "Renew Economy",
+      url: "https://reneweconomy.com.au",
+      description: "Australian clean energy news and analysis.",
+    },
+  ],
+};

@@ -14,17 +14,19 @@ export default function EnergyIndex({ posts }) {
           <h1 className="text-3xl font-bold dark:text-gray-100 mb-2">
             AI Energy Blog
           </h1>
-          <p className="text-gray-500 dark:text-gray-300 mb-4">
-            AI-assisted energy intelligence briefs powered by the{" "}
-            <a
-              href="https://github.com/TeodoroTopa/green-context-engine"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-400 hover:underline"
+          <p className="text-gray-500 dark:text-gray-300 mb-2">
+            An automated pipeline monitors energy and climate news, enriches
+            each story with real data from scientific and government databases,
+            and uses AI to write concise, data-grounded summaries. Every number
+            traces to a named source, and a human approves every post.
+          </p>
+          <p className="mb-4">
+            <Link
+              href="/energy/about"
+              className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
             >
-              Green Context Engine
-            </a>
-            .
+              Learn how it works &rarr;
+            </Link>
           </p>
           <div className="bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-700 rounded-md p-4 mb-8">
             <p className="text-sm text-yellow-800 dark:text-yellow-200">
