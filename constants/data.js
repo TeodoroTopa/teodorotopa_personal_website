@@ -238,12 +238,6 @@ export const energySources = {
       description:
         "Monthly temperature and precipitation data from the Global Historical Climatology Network, covering 180+ countries.",
     },
-    {
-      name: "Electricity Maps",
-      url: "https://www.electricitymaps.com/",
-      description:
-        "Real-time carbon intensity and electricity mix data for 200+ zones worldwide.",
-    },
   ],
   newsFeeds: [
     {
