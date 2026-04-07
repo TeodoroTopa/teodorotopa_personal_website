@@ -261,19 +261,9 @@ export const energySources = {
       description: "Clean energy and electric vehicle news.",
     },
     {
-      name: "Utility Dive",
-      url: "https://www.utilitydive.com",
-      description: "US energy industry news covering utilities and regulation.",
-    },
-    {
       name: "Electrek",
       url: "https://electrek.co",
       description: "Electric vehicles, energy storage, and solar news.",
-    },
-    {
-      name: "Renew Economy",
-      url: "https://reneweconomy.com.au",
-      description: "Australian clean energy news and analysis.",
     },
   ],
 };
