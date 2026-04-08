@@ -52,33 +52,38 @@ export default function EnergyAbout() {
               {[
                 {
                   step: "1",
-                  title: "Find relevant stories",
-                  desc: "The system scans 7+ energy and climate news sources for new articles matching topics like solar, wind, coal, deforestation, and grid decarbonization.",
+                  title: "Find and select stories",
+                  desc: "The system scans 5 energy and climate news sources for new articles matching topics like solar, wind, coal, deforestation, and grid decarbonization. An AI then selects which story from each source is best served by the available data.",
                 },
                 {
                   step: "2",
                   title: "Decide what data to look up",
-                  desc: "An AI reads the article and decides which databases to query and for which countries or regions. For example, a story about Indonesian deforestation triggers lookups for Indonesia's electricity grid data and forest cover loss.",
+                  desc: "An AI reads the article and decides which databases to query and for which countries or regions. For example, a story about Indonesian deforestation triggers lookups for Indonesia's electricity grid data, forest cover loss, and deforestation drivers.",
                 },
                 {
                   step: "3",
                   title: "Pull real data",
-                  desc: "The system queries government and scientific databases for actual numbers: electricity generation by fuel type, carbon intensity, tree cover loss, threatened species counts. It also pulls global and regional benchmarks for comparison.",
+                  desc: "The system queries government and scientific databases for actual numbers: electricity generation by fuel type, carbon intensity, tree cover loss, forest carbon emissions, and heating or cooling degree days. It also pulls global and regional benchmarks for comparison.",
                 },
                 {
                   step: "4",
                   title: "Write a brief",
-                  desc: "An AI writer creates a concise summary that connects the news story to the data, comparing countries to global benchmarks and identifying key trade-offs.",
+                  desc: "An AI writer creates a 200-250 word summary structured around three sections: The story (what happened), The bigger picture (data context), and The tension (the key trade-off). The writer follows learned rules from past editorial feedback to avoid repeating previous mistakes.",
                 },
                 {
                   step: "5",
                   title: "Fact-check",
-                  desc: "A separate AI editor reviews the brief and checks every number against the source data. If it finds errors, the brief is revised and re-checked (up to two rounds).",
+                  desc: "A separate AI editor reviews the brief and checks every number against the source data. It can pass the draft, fix issues directly, or fail it for a full rewrite. After any fix, a read-only verification step confirms the corrections didn't introduce new problems.",
                 },
                 {
                   step: "6",
                   title: "Human approval",
-                  desc: "A human reviews the final brief and approves it before it is published. Nothing goes live without this step.",
+                  desc: "A human reviews the final brief in Notion and approves or rejects it. Nothing goes live without this step. Rejected drafts include written feedback explaining why.",
+                },
+                {
+                  step: "7",
+                  title: "Learn from feedback",
+                  desc: "When a brief is rejected, the human's feedback is processed by AI into generalized writing rules. These rules are loaded into the writer's prompt on every future run, so the system learns from its mistakes and improves over time.",
                 },
               ].map((item) => (
                 <li key={item.step} className="flex gap-4">
@@ -118,6 +123,11 @@ export default function EnergyAbout() {
                 </p>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li>
+                    <strong>Article Selector</strong> &mdash; picks the best
+                    story from each news source based on which article is best
+                    served by the available data.
+                  </li>
+                  <li>
                     <strong>Data Strategist</strong> &mdash; reads the article
                     plus a catalog of all available data sources and decides
                     which APIs to query and for which entities (countries,
@@ -126,24 +136,30 @@ export default function EnergyAbout() {
                   <li>
                     <strong>Drafter</strong> &mdash; writes the brief using only
                     data provided by the pipeline, never its training data.
+                    Loads learned writing rules from past editorial feedback.
                   </li>
                   <li>
                     <strong>Editor</strong> &mdash; fact-checks every claim
-                    against the source data, flagging errors by severity.
+                    against the source data. Can pass the draft, fix issues
+                    directly, or fail it for a full rewrite.
                   </li>
                   <li>
-                    <strong>Reviser</strong> &mdash; fixes editor-flagged errors
-                    (up to two revision rounds).
-                  </li>
-                  <li>
-                    <strong>Voice Checker</strong> &mdash; enforces editorial
-                    style rules (no filler language, no unearned adjectives).
+                    <strong>Verification</strong> &mdash; a read-only check
+                    after the editor fixes a draft, confirming the corrections
+                    didn&apos;t introduce new problems.
                   </li>
                 </ul>
                 <p>
                   Data sources are configured via YAML catalogs. Adding a new
                   source requires only a catalog file and a Python connector
                   &mdash; the strategist automatically discovers it.
+                </p>
+                <p>
+                  The system includes a feedback loop: when a human rejects a
+                  draft and writes feedback, AI distills that feedback into
+                  generalized writing rules stored in a YAML file. These rules
+                  are loaded into every future draft, so the pipeline
+                  continuously improves from editorial corrections.
                 </p>
                 <p>
                   The full source code is available on{" "}
@@ -170,6 +186,13 @@ export default function EnergyAbout() {
               compared to global or regional benchmarks. A dedicated AI editor
               verifies every factual claim against the actual source data before
               a human approves publication.
+            </p>
+            <p>
+              The system also learns from human feedback. When a brief is
+              rejected, the editor&apos;s notes are distilled into reusable writing
+              rules that shape every future draft. The pipeline gets better over
+              time, not just at avoiding specific errors, but at internalizing
+              the editorial standards behind them.
             </p>
           </div>
 

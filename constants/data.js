@@ -224,19 +224,13 @@ export const energySources = {
       name: "Global Forest Watch",
       url: "https://www.globalforestwatch.org/",
       description:
-        "Satellite-derived tree cover loss data by country, covering 2000-2024 at 30-meter resolution.",
-    },
-    {
-      name: "IUCN Red List",
-      url: "https://www.iucnredlist.org/",
-      description:
-        "Threatened species counts by country and threat category, from the International Union for Conservation of Nature.",
+        "Tree cover loss, deforestation drivers, and forest carbon emissions by country, from satellite data covering 2000-2024.",
     },
     {
       name: "NOAA Climate Data",
       url: "https://www.ncdc.noaa.gov/cdo-web/",
       description:
-        "Monthly temperature and precipitation data from the Global Historical Climatology Network, covering 180+ countries.",
+        "Temperature, precipitation, and heating/cooling degree days from the Global Historical Climatology Network, covering 180+ countries.",
     },
   ],
   newsFeeds: [
