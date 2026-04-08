@@ -5,8 +5,10 @@ source_url: https://electrek.co/2026/03/30/this-600m-california-battery-will-pow
 sources:
   - name: electrek
     url: https://electrek.co/2026/03/30/this-600m-california-battery-will-power-321000-homes-at-peak-demand/
-  - name: Ember
-    url: https://ember-energy.org
+  - name: EIA
+    url: https://www.eia.gov
+  - name: NOAA
+    url: https://www.noaa.gov
 status: approved
 ---
 

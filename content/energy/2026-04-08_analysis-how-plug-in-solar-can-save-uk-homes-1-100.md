@@ -7,6 +7,8 @@ sources:
     url: https://www.carbonbrief.org/analysis-how-plug-in-solar-can-save-uk-homes-1100-on-energy-bills/
   - name: Ember
     url: https://ember-energy.org
+  - name: NOAA
+    url: https://www.noaa.gov
 status: approved
 ---
 

@@ -7,6 +7,8 @@ sources:
     url: https://news.mongabay.com/2026/04/oil-surge-sharpens-calls-for-indonesia-to-shift-away-from-fossil-fuels/
   - name: Ember
     url: https://ember-energy.org
+  - name: Global Forest Watch
+    url: https://www.globalforestwatch.org
 status: approved
 ---
 

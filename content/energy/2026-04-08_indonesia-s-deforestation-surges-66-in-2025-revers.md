@@ -7,6 +7,8 @@ sources:
     url: https://news.mongabay.com/2026/04/indonesias-deforestation-surges-66-in-2025-reversing-years-of-decline/
   - name: Ember
     url: https://ember-energy.org
+  - name: Global Forest Watch
+    url: https://www.globalforestwatch.org
 status: approved
 ---
 

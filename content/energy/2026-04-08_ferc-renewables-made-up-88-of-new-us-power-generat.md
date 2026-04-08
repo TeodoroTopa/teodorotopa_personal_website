@@ -7,6 +7,8 @@ sources:
     url: https://electrek.co/2026/04/01/ferc-renewables-made-up-88-of-new-us-power-generating-capacity-in-2025/
   - name: Ember
     url: https://ember-energy.org
+  - name: EIA
+    url: https://www.eia.gov
 status: approved
 ---
 

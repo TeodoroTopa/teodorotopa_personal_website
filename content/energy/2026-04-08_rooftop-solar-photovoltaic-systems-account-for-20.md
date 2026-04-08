@@ -5,8 +5,8 @@ source_url: https://cleantechnica.com/2026/04/03/rooftop-solar-photovoltaic-syst
 sources:
   - name: cleantechnica
     url: https://cleantechnica.com/2026/04/03/rooftop-solar-photovoltaic-systems-account-for-20-of-puerto-ricos-capacity-mix/
-  - name: Ember
-    url: https://ember-energy.org
+  - name: EIA
+    url: https://www.eia.gov
 status: approved
 ---
 
