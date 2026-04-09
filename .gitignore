@@ -32,3 +32,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# CodeMachine orchestration (local workflow configs)
+.codemachine/
+
+# Claude Code local settings (hooks, permissions — machine-specific)
+.claude/settings.local.json
