@@ -232,6 +232,24 @@ export const energySources = {
       description:
         "Temperature, precipitation, and heating/cooling degree days from the Global Historical Climatology Network, covering 180+ countries.",
     },
+    {
+      name: "NLR (NREL)",
+      url: "https://developer.nlr.gov",
+      description:
+        "US solar resource data and energy production estimates from the National Laboratory of the Rockies. GHI, DNI, and PVWatts capacity factor for any US location.",
+    },
+    {
+      name: "Open-Meteo",
+      url: "https://open-meteo.com",
+      description:
+        "Global solar radiation, wind speed, and historical weather data at 10km resolution, covering any location on Earth back to 1940.",
+    },
+    {
+      name: "UK Carbon Intensity API",
+      url: "https://carbonintensity.org.uk",
+      description:
+        "Real-time and forecast carbon intensity and generation mix for Great Britain at 30-minute resolution, from the National Energy System Operator.",
+    },
   ],
   newsFeeds: [
     {
